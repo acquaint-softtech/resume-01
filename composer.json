@@ -1,5 +1,6 @@
 {
     "name": "acquaint-softtech/resume01",
+    "license": "proprietary",
     "extra": {
         "statamic": {
             "name": "Resume01",

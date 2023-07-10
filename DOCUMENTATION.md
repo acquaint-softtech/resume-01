@@ -54,7 +54,7 @@ php please starter-kit:install acquaint-softtech/resume01 --clear-site
 
 The above installers should prompt you to make a user, but you can also run `php please make:user`. You'll want it to be a `super` so you have access to everything.
 
-### 3. Recompile the CSS (optional)
+### 3. Recompile the CSS
 
 The [TailwindCSS](https://tailwindcss.com/) included in this kit is compiled and purged to reduce filesize on any unused classes and selectors. If you want to modify anything, just recompile it.
 
