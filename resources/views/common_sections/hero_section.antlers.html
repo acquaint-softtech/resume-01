@@ -10,7 +10,7 @@
             <div class="flex justify-center space-x-3">
                 {{hero_section:hero_fa_icon}}
                 <a href="{{fa_icon_link}}" target="_blank" rel="noopener noreferrer">
-                    <span style="color: {{ text_color }}" class="socialbtn rounded-md transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-dark-gray-3 hover:text-white hover:bg-gradient-to-r from-brand-orange to-brand-red bg-light-gray h-10 w-10 inline-flex text-center items-center justify-center">
+                    <span style="color:{{ text_color }}" class="socialbtn rounded-md transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-dark-gray-3 hover:!text-white hover:bg-gradient-to-r from-brand-orange to-brand-red bg-light-gray h-10 w-10 inline-flex text-center items-center justify-center">
                         <i class="fa-brands {{fa_icon}}"></i>
                     </span>
                 </a>
@@ -21,7 +21,7 @@
                 {{if index == 0}}
                 <a href="tel:{{details_description}}" class="group">
                     <div class="flex py-2.5">
-                        <span style="color: {{ details_text_color }}" class="socialbtn bg-white dark:bg-black dark:text-white shadow-md h-10 w-10 inline-flex items-center justify-center rounded-md">
+                        <span style="color: {{ details_text_color }}" class="socialbtn bg-white dark:bg-black dark:text-white shadow-md h-10 w-10 inline-flex items-center justify-center rounded-md hover:!text-white hover:bg-gradient-to-r from-brand-orange to-brand-red">
                             <i class="fa-solid {{fa_icon}}"></i>
                         </span>
 
@@ -34,7 +34,7 @@
                 {{elseif index == 1}}
                 <a href="mailto:{{details_description}}"  class="group">
                     <div class="flex py-2.5 border-t border-t-gary-4 dark:border-t-dark-gray-4">
-                        <span style="color: {{ details_text_color }}" class="socialbtn bg-white dark:bg-black dark:text-white shadow-md h-10 w-10 inline-flex items-center justify-center rounded-md">
+                        <span style="color: {{ details_text_color }}" class="socialbtn bg-white dark:bg-black dark:text-white shadow-md h-10 w-10 inline-flex items-center justify-center rounded-md hover:!text-white hover:bg-gradient-to-r from-brand-orange to-brand-red">
                             <i class="fa-solid {{fa_icon}}"></i>
                         </span>
                         <div class="text-left ml-2.5">
@@ -45,7 +45,7 @@
                 </a>
                 {{else}}
                 <div class="flex py-2.5">
-                    <span style="color: {{ details_text_color }}" class="socialbtn bg-white dark:bg-black dark:text-white shadow-md h-10 w-10 inline-flex items-center justify-center rounded-md">
+                    <span style="color: {{ details_text_color }}" class="socialbtn bg-white dark:bg-black dark:text-white shadow-md h-10 w-10 inline-flex items-center justify-center rounded-md hover:!text-white hover:bg-gradient-to-r from-brand-orange to-brand-red">
                         <i class="fa-solid {{fa_icon}}"></i>
                     </span>
                     <div class="text-left ml-2.5">

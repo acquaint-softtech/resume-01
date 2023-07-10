@@ -9,11 +9,18 @@
                     <h4 class="text-2xl dark:text-white font-medium"> {{learning_grid_title}} </h4>
                 </div>
                 {{learning_details_grid}}
-                <div style="background-color: {{ learning_details_grid_bg_color }}"
-                    class="dark:bg-transparent py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-dark-gray-3 dark:border-2">
+                <div x-show="!darkMode" style="background-color: {{ learning_details_grid_bg_color }}"
+                    class="py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg">
                     <span class="text-tiny text-gray-lite">{{learning_details_grid_year}}</span>
                     <h3 class="text-xl"> {{learning_details_grid_title}} </h3>
                     <p> {{learning_details_grid_univercity}} </p>
+                </div>
+
+                <div x-show="darkMode"
+                    class="dark:bg-[#111111] py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-dark-gray-3 dark:border-2">
+                    <span class="dark:text-[#b7b7b7]">{{learning_details_grid_year}}</span>
+                    <h3 class="dark:text-white text-xl"> {{learning_details_grid_title}} </h3>
+                    <p class="dark:text-[#b7b7b7]"> {{learning_details_grid_univercity}} </p>
                 </div>
                 {{/learning_details_grid}}
             </div>
@@ -21,3 +28,4 @@
         </div>
     </div>
 </div>
+
