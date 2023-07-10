@@ -1,0 +1,54 @@
+title: 'Hero Section'
+data:
+  hero_image: avatar.jpg
+  hero_name: 'Monalisa Ashley'
+  hero_designation: 'Ui/Ux Designer'
+  hero_fa_icon:
+    -
+      id: ljfgxgqq
+      fa_icon: fa-facebook-f
+      fa_icon_link: '#'
+      text_color: '#1773EA'
+    -
+      id: ljfgxxx7
+      fa_icon: fa-twitter
+      fa_icon_link: '#'
+      text_color: '#1C9CEA'
+    -
+      id: ljfgy9k3
+      fa_icon: fa-dribbble
+      fa_icon_link: '#'
+      text_color: '#e14a84'
+    -
+      id: ljfgya63
+      fa_icon: fa-linkedin-in
+      fa_icon_link: '#'
+      text_color: '#0072b1'
+  details:
+    -
+      id: ljfgyxod
+      fa_icon: fa-mobile-screen-button
+      details_title: Phone
+      details_description: '+123 456 7890'
+      details_text_color: '#E93B81'
+    -
+      id: ljfgzpyf
+      fa_icon: fa-envelope-open-text
+      details_title: Email
+      details_description: example@mail.com
+      details_text_color: '#6AB5B9'
+    -
+      id: ljfh08a1
+      fa_icon: fa-location-dot
+      details_title: Location
+      details_description: 'Hong kong china'
+      details_text_color: '#FD7590'
+    -
+      id: ljfh0vua
+      fa_icon: fa-calendar-days
+      details_title: Birthday
+      details_description: 'May 27, 1990'
+      details_text_color: '#C17CEB'
+  button_image: dowanload.png
+  button_text: 'Download CV'
+  resume_pdf: free_test_data_100kb_pdf.pdf

@@ -1,0 +1,121 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: collection_image
+            field:
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Image
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              max_files: 1
+              validate:
+                - image
+          -
+            handle: details_grid
+            field:
+              fields:
+                -
+                  handle: collection_project_name
+                  field:
+                    input_type: text
+                    antlers: false
+                    type: text
+                    display: 'Project Name'
+                    icon: text
+                    width: 33
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                -
+                  handle: collection_project_description
+                  field:
+                    input_type: text
+                    antlers: false
+                    type: text
+                    display: 'Project Description'
+                    icon: text
+                    width: 33
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+                -
+                  handle: collection_site_link
+                  field:
+                    type: link
+                    display: 'Site Link'
+                    icon: link
+                    width: 33
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    hide_display: false
+              mode: stacked
+              reorderable: true
+              fullscreen: true
+              type: grid
+              display: 'Details Grid'
+              icon: grid
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: collection_description
+            field:
+              antlers: false
+              type: textarea
+              display: Description
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
+          -
+            handle: portfolio_category
+            field:
+              type: terms
+              taxonomies:
+                - portfolio_category
+              display: 'Portfolio Category'
+              mode: select
+title: Portfolio

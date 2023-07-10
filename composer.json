@@ -1,0 +1,9 @@
+{
+    "name": "my-vendor-name/resume01",
+    "extra": {
+        "statamic": {
+            "name": "Resume01",
+            "description": "Resume01 starter kit"
+        }
+    }
+}
