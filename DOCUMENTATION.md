@@ -1,4 +1,4 @@
-## resume01
+## Resume01
 
 Resume01 is a Statamic starter kit. A fully customizable readymade template for a resume website. 
 
